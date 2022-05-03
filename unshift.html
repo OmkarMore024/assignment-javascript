@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script type="text/javascript">
+	   
+		var a=[10,20,30,40,50];
+        var b=[]; 
+           b.length=3;
+        b[0]=5;
+        b[1]=4;
+        b[2]=3;
+
+      
+		var i,j,temp;
+		var end=a.length-1;
+	    var end2=a.length+b.length-1;
+	     var len=a.length;
+
+	     document.write("</br>Before shifting the array<br/>");
+	 
+	     for(i=0;i<a.length;i++)
+	   {
+	   	document.write(a[i]+"<br/>");
+	   }
+	   a.length=a.length+b.length;
+
+	   document.write(end+""+end2+""+len+""+a.length);  
+
+		 
+       
+         
+
+	    document.write("values to be enter:<br/>");
+
+	    for(i=0;i<b.length;i++)
+	   {
+	   	document.write(b[i]+"<br/>");
+	   }
+
+	   for(i=0;i<len;i++)
+	   {
+          a[end2]=a[end];
+          end--;
+          end2--;
+	   }  
+
+
+	   for(i=0;i<b.length;i++)
+	   {
+	   	a[i]=b[i];
+	   }
+	   
+     document.write("After shifting the array<br/>");
+	   for(i=0;i<a.length;i++)
+	   {
+	   	document.write(a[i]+"<br/>");
+	   }	
+     
+
+	</script>
+</head>
+<body>
+ <!-- 
+
+     
+	  
+	  
+
+        -->
+</body>
+</html>

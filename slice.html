@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script type="text/javascript">
+		
+		var i,j=0,temp;
+        var a=[10,20,30,40,50,60,70];
+       var b=[];
+       var find=4,lind=7;
+         document.write("Before the array<br/>");
+	   for(i=0;i<a.length;i++)
+	   {
+	   	document.write(a[i]+"<br/>");
+	   }
+	   
+      
+       b.length=lind-find;
+
+       for(i=0;i<a.length;i++)
+       {
+       	 if(i>=find&&i<lind)
+       	 {
+            b[j]=a[i];
+            j++;
+       	 }
+       }
+       document.write("After slicing the array: <br/>");
+        
+
+       	document.write(b.length+"<br/>");
+       	  document.write(b);
+     
+
+    
+	</script>
+</head>
+<body>
+
+</body>
+</html>
