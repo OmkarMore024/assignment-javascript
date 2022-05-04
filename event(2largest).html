@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+
+		
+         
+		function secondLargest()
+		{
+			var a=[30,45,23,15,23,2,24,56,67,58,30];
+			var max=a[0];
+			var max2=a[1];
+
+			for(var i=0;i<a.length;i++)
+			{
+				if(max<a[i])
+				{
+					max=a[i];
+				}
+
+			}
+			
+			for(var i=0;i<a.length;i++)
+			{
+				if(max2<a[i] && a[i]!=max)
+				{
+				    	max2=a[i];
+			    }	
+
+			}
+			alert("2nd largest value from array:"+max2);
+			
+		}
+		
+
+	</script>
+</head>
+<body>
+
+	<center>
+		<h3>finding second largest from given array <br/> [30,45,23,15,23,2,24,56,67,58,30]</h3>
+	<input type="submit" name="CLICK here" value="find" onclick="secondLargest()" />
+</center>
+
+</body>
+</html>

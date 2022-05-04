@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var no=1000;
+		var i,j;
+		
+
+		for(i=1;i<no;i++)
+		{var b=true;
+
+			for(j=2;j<i;j++)
+			{
+				if(i%j==0)
+				{
+					b=false;
+					break;
+				}
+
+			}
+			if(b)
+			{
+				document.write("<br/>"+i);
+			}
+			else
+			{
+				continue;
+			}
+		}
+
+	</script>
+</head>
+<body>
+   <h4>print all prime numbe till 1000</h4>
+</body>
+</html>
