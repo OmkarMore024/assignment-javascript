@@ -1,0 +1,19 @@
+table,
+th,
+td,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.heading {
+  display: inline-flex;
+  font-family: cursive;
+}
+
+.name {
+  font-size: 4vh;
+}
+.appform {
+  padding: 24px 0 0 0;
+}
